@@ -1,16 +1,17 @@
 const sumAll = function () {
-    let firstValue = 1;
-    let secondValue = 4000;
+    let firstValue = 123;
+    let secondValue = 1;
     let startValue;
     let endValue;
     let i = 0;
     let mySum = 0;
 
-    if secondValue > firstValue {
+    if (firstValue > secondValue) {
         startValue = secondValue;
+        endValue = firstValue;
     }
 
-    for (i = firstValue; i <= secondValue; i++) {
+    for (i = startValue; i <= endValue; i++) {
         mySum += i;
         console.log(i);
     }
