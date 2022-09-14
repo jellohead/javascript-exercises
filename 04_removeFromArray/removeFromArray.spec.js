@@ -7,7 +7,7 @@ describe('removeFromArray', () => {
   test.skip('removes multiple values', () => {
     expect(removeFromArray([1, 2, 3, 4], 3, 2)).toEqual([1, 4]);
   });
-  test('ignores non present values', () => {
+  test.skip('ignores non present values', () => {
     expect(removeFromArray([1, 2, 3, 4], 7, "tacos")).toEqual([1, 2, 3, 4]);
   });
   test.skip('ignores non present values, but still works', () => {
@@ -16,7 +16,7 @@ describe('removeFromArray', () => {
   test.skip('can remove all values', () => {
     expect(removeFromArray([1, 2, 3, 4], 1, 2, 3, 4)).toEqual([]);
   });
-  test.skip('works with strings', () => {
+  test('works with strings', () => {
     expect(removeFromArray(["hey", 2, 3, "ho"], "hey", 3)).toEqual([2, "ho"]);
   });
   test.skip('only removes same type', () => {

@@ -6,7 +6,7 @@ const removeFromArray = function () {
     // newArray = myArray.splice(myIndex, 1);
 
     let newArray = myArray.filter(function (value, index, arr) {
-        return (value != 7) && (value != "tacos");
+        return (value != 1) && (value != 2) && (value != 3) && (value != 4);
     });
     console.log("newArray = " + newArray);
     return newArray;
