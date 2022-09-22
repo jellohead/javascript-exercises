@@ -16,11 +16,12 @@ const fibonacci = function (inputNumber) {
     return currentNumber;
 };
 
-let inputNumber = 4;
+let inputNumber = 6;
 console.log(fibonacci(inputNumber));
 
 // Do not edit below this line
 module.exports = fibonacci;
 
 // expect(fibonacci(4)).toBe(3);
+// expect(fibonacci(6)).toBe(8);
 
