@@ -1,5 +1,19 @@
-const fibonacci = function () {
-    return 3;
+const fibonacci = function (inputNumber) {
+
+    let seriesTotal = 0,
+        currentNumber = 0,
+        nextNumber = 1;
+
+
+    for (let i = 0; i < inputNumber; i++) {
+
+        seriesTotal = currentNumber + nextNumber;
+        currentNumber = nextNumber;
+        nextNumber = seriesTotal;
+
+    }
+    console.log(currentNumber);
+    return currentNumber;
 };
 
 let inputNumber = 4;
