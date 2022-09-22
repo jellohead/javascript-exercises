@@ -6,7 +6,7 @@ const palindromes = inputWords => {
     return (cleanedWords === reverseWords ? true : false);
 }
 
-let inputWords = 'RaC=eca!*r';
+let inputWords = 'A car, a man, a maraca.';
 console.log('inputWords = ' + inputWords);
 console.log(palindromes(inputWords));
 
@@ -15,3 +15,5 @@ module.exports = palindromes;
 
 
 // expect(palindromes('racecar!')).toBe(true);
+// expect(palindromes('Racecar!')).toBe(true);
+// expect(palindromes('A car, a man, a maraca.')).toBe(true);
