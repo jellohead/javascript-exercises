@@ -16,7 +16,7 @@ const fibonacci = function (inputNumber) {
     return currentNumber;
 };
 
-let inputNumber = 6;
+let inputNumber = 25;
 console.log(fibonacci(inputNumber));
 
 // Do not edit below this line
@@ -24,4 +24,6 @@ module.exports = fibonacci;
 
 // expect(fibonacci(4)).toBe(3);
 // expect(fibonacci(6)).toBe(8);
-
+// expect(fibonacci(10)).toBe(55);
+// expect(fibonacci(15)).toBe(610);
+// expect(fibonacci(25)).toBe(75025);
