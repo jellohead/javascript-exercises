@@ -6,7 +6,7 @@ const palindromes = inputWords => {
     return (cleanedWords === reverseWords ? true : false);
 }
 
-let inputWords = 'A car, a man, a maraca.';
+let inputWords = 'ZZZZ car, a man, a maracaz.';
 console.log('inputWords = ' + inputWords);
 console.log(palindromes(inputWords));
 
@@ -17,3 +17,5 @@ module.exports = palindromes;
 // expect(palindromes('racecar!')).toBe(true);
 // expect(palindromes('Racecar!')).toBe(true);
 // expect(palindromes('A car, a man, a maraca.')).toBe(true);
+// expect(palindromes('Animal loots foliated detail of stool lamina.')).toBe(true);
+// expect(palindromes('ZZZZ car, a man, a maracaz.')).toBe(false);
