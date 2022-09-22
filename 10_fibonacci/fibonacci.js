@@ -1,14 +1,15 @@
-const fibonacci = function (inputNumber) {
+const fibonacci = function (inputValue) {
 
     let seriesTotal = 0,
         currentNumber = 0,
         nextNumber = 1;
 
-    if (inputNumber < 0) {
+
+    if (inputValue < 0) {
         return 'OOPS';
     } else {
 
-        for (let i = 0; i < inputNumber; i++) {
+        for (let i = 0; i < inputValue; i++) {
 
             seriesTotal = currentNumber + nextNumber;
             currentNumber = nextNumber;
@@ -21,8 +22,10 @@ const fibonacci = function (inputNumber) {
     }
 };
 
-let inputNumber = -25;
-console.log(fibonacci(inputNumber));
+let inputValue = "8";
+console.log(typeof inputValue);
+
+console.log(fibonacci(inputValue));
 
 // Do not edit below this line
 module.exports = fibonacci;
@@ -33,3 +36,6 @@ module.exports = fibonacci;
 // expect(fibonacci(15)).toBe(610);
 // expect(fibonacci(25)).toBe(75025);
 // expect(fibonacci(-25)).toBe("OOPS");
+// expect(fibonacci("1")).toBe(1);
+// expect(fibonacci("2")).toBe(1);
+// expect(fibonacci("8")).toBe(21);
