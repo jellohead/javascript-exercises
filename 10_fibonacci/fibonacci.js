@@ -4,19 +4,24 @@ const fibonacci = function (inputNumber) {
         currentNumber = 0,
         nextNumber = 1;
 
+    if (inputNumber < 0) {
+        return 'OOPS';
+    } else {
 
-    for (let i = 0; i < inputNumber; i++) {
+        for (let i = 0; i < inputNumber; i++) {
 
-        seriesTotal = currentNumber + nextNumber;
-        currentNumber = nextNumber;
-        nextNumber = seriesTotal;
+            seriesTotal = currentNumber + nextNumber;
+            currentNumber = nextNumber;
+            nextNumber = seriesTotal;
 
+        }
+
+        console.log(currentNumber);
+        return currentNumber;
     }
-    console.log(currentNumber);
-    return currentNumber;
 };
 
-let inputNumber = 25;
+let inputNumber = -25;
 console.log(fibonacci(inputNumber));
 
 // Do not edit below this line
@@ -27,3 +32,4 @@ module.exports = fibonacci;
 // expect(fibonacci(10)).toBe(55);
 // expect(fibonacci(15)).toBe(610);
 // expect(fibonacci(25)).toBe(75025);
+// expect(fibonacci(-25)).toBe("OOPS");
