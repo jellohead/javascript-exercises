@@ -1,19 +1,42 @@
-const findTheOldest = function (array) {
-    return array.reduce((oldest, currentPerson) => {
-        const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
-        const currentAge = getAge(currentPerson.yearOfBirth, currentPerson.yearOfDeath);
-        return oldestAge < currentAge ? currentPerson : oldest;
-    })
-};
-
-
 const getAge = function (birth, death) {
     if (!death) {
         death = new Date().getFullYear();
-        console.log(death);
     }
     return death - birth;
-};
+}
+
+const findTheOldest = function (array) {
+    let oldestPersonRecord = array.reduce(function (oldestPerson, currentPerson) {
+        const oldest
+
+        array.reduce()
+
+    }
+
+
+
+
+
+
+
+
+
+// const findTheOldest = function (array) {
+//     return array.reduce((oldest, currentPerson) => {
+//         const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
+//         const currentAge = getAge(currentPerson.yearOfBirth, currentPerson.yearOfDeath);
+//         return oldestAge < currentAge ? currentPerson : oldest;
+//     })
+// };
+
+
+// const getAge = function (birth, death) {
+//     if (!death) {
+//         death = new Date().getFullYear();
+//         console.log(death);
+//     }
+//     return death - birth;
+// };
 
 // calculate the age
 
